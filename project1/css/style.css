@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+                            /* header */
+.header{
+    background-color:rgba(0, 0, 0,.05) ;
+    position: fixed;
+    z-index: 10;
+}
+.header .logo{
+    width: 40%;
+}
+.header .logo img{
+    width: 80px;
+    margin-top: 15px;
+}
+.header .nav{
+    width: 60%;
+}
+.header .nav li{
+    display: inline-block;
+    padding: 35px 25px;
+}
+.header .nav li a{
+    text-decoration: none;
+}
+.header .nav li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    transition: width .3s;
+}
+.header .nav li a.a1::after{
+    content: "";
+    display: block;
+    height: 3px;
+    transition: width .3s;
+}
+                           /* /header */
+                           /* home */
+.home{
+    background-image: url(../imges/background.png);
+    background-size: cover;
+    height: 100vh;
+}
+.over{
+    height: 100%;
+    background-color:rgba(0, 0, 0,.5) ;
+}
+.home-content{
+    width: 60%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title1{
+    font-size: 60px;
+}
+.dscr{
+    font-size: 30px;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+.btn{
+    width: 140px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn1{
+    margin: 8px 0 0 8px;
+}
+.btn:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+.pd-y{
+    padding: 120px 0;
+}
+                         /* /body */
+.title2{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+.line{
+    margin:10px auto ;
+    display: block;
+    width: 100px;
+    height: 6px;
+}
+.g1{
+    margin-top: 250px;
+}
+                    /* about */
+i{
+    color: #6195ff; 
+}
+.safari{
+    width: 29%;
+    height: 250px;
+    border: 1px solid #888;
+    text-align: center;
+}
+.safari2{
+    margin: 0 98px;
+}
+.tit3{
+    margin-top: 10px ;
+    font-size: 40px;
+    color: black;
+    transition:color 1s;
+}
+.safari i{
+    margin-top: 15px;
+    font-size: 50px;
+}
+.safari p{ 
+    font-size: 23px;
+    color: #888 ;
+    padding: 10px 0;
+}
+.safari a{
+    text-decoration: none;
+    color:#6195ff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.ltr-eff:after{
+    content: "";
+    background-color:#333 ;
+    width:0;
+    height:100%;
+    transition:width.5s;
+    z-index: -1;
+}
+                       /* /about */
+                       /* photo gallery */
+.n{ 
+    margin-top: -50px;
+    background: #f9f9f9;
+    height: 1020px;
+}
+.ga-contact{
+    width: 29%;
+    height: 500px;
+}
+.ga-contact img{
+    height: 100%;
+}
+.gallery div{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.title3{
+    font-size: 40px;
+    margin-top: 50%;
+    color: #6195ff;
+}
+.ga-contact p{
+    font-size: 20px;
+}
+.ga-mar{
+    margin: 0px 98px;
+}
+.n2 p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.n a{
+    font-size: 20px;
+}
+.n2{
+    height: 100%;
+    visibility: hidden;
+    background-color:rgba(0, 0, 0,.5) ;
+    opacity: 0;
+    transition: opacity.5s;
+}
+.ga-contact:hover .n2{
+    visibility: visible;
+    opacity: 1;
+}
+                             /* /photo gallery */
+                             /* offer */
+.offer{
+    overflow: hidden;
+    margin-top: 80px;
+}
+.offer-content{
+    margin-bottom: 25px;
+    width: 29%;
+    border: 1px solid #888;
+    padding:20px 15px 30px 70px ;
+}
+.mar1{
+    margin:0 6%;
+}
+.r2{
+    top: 28px;
+    left: 35px;
+    font-size: 2em;
+}
+.tit4{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dscr1{
+    color: #888;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+                        /* /offer */
+                        /* target */
+.target{
+    background-image:url(../imges/safari1.jpg);
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.target-content{
+    overflow: hidden;
+}
+.target-item{
+    width: 25%;
+    text-align: center;
+}
+.target-item .icon{
+    color: #6195ff;
+    margin-bottom: 15px;
+}
+.target-item-titel{
+    font-weight: bold;
+    font-size: 30px;
+}
+                             /* /target */
+                             /* prices */
+.pricing-items{
+    overflow: hidden;
+}
+.pricing-item{
+    width: 28%;
+    padding: 40px 15px ;
+    border:1px solid #e8e8e8 ;
+    text-align: center;
+}
+.pricing-item.mg{
+    margin: 0 4%;
+}
+.pricing-item-text{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #999;
+    transition: color .5s;
+}
+.pricint-item-permonth{
+    width: 130px;
+    height: 130px;
+    transition: color .5s;
+    padding: 20px 0;
+    margin:20px auto ;
+    border: 2px solid #6195ff ;
+    border-radius: 50%;
+}
+.pricint-item-permonth .doller{
+    font-size: 50px;
+}
+.pricint-item-permonth .month{
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: 15px ;
+}
+.pricing-list{
+    list-style: none;
+}
+.pricing-list li{
+    color: #999;
+    line-height: 2;
+}
+.pricing-item-purchase{
+    background: none;
+    border: 0;
+    border: 2px solid #7ba7ff;
+    display: block;
+    padding: 10px;
+    width: 140px;
+    margin: 15px auto 0 auto;
+    color: #7ba7ff
+}
+.ttb-effect:after{
+    content: "";
+    height: 0;
+    background:#333;
+    transition:height .5s;
+    z-index: -1;
+}
+.ttb-effect:hover:after{
+     height: 100%;
+}
+.pricing-item:hover .pricing-item-text{
+    color: #6195ff 
+}
+                        /* /pricing */
+                        /* team */
+.team-content{
+    overflow: hidden;
+}
+.team-item{
+    height: 500px;
+    width: 28%;
+    background: #e8e8e8;
+    padding: 40px 10px;
+    text-align: center;
+}
+.team-item .team-img{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+.team-overlay{
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0,.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    transition: .5s;
+}
+.team-item .team-img img{
+    margin: auto;
+}
+.team-item .team-info-titel{
+    color: #222;
+    margin: 10px 0;
+    transition: color .5s;
+}
+.team-item:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team-item.ttb-effect{
+    z-index: 1;
+}
+.team-item.mg{
+    margin: 0 4%;
+}
+.b2{
+    font-size: 30px;
+}
+                            /* /team */
+                            /* footer */
+.footer{
+    background: #1c1d21;
+    text-align: center;
+    padding: 60px 0 ;
+}
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-links li{
+    display: inline-block;
+}
+.footer-links li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.footer-links li a i{
+    line-height: 50px;
+}
+.copy{
+    color: #999;
+    text-transform: uppercase;
+    font: size 15px; 
+}
+.header .nav li a,.title1,.dscr,.btn1,.safari:hover.tit3,.n2 p,.offer-content:hover .tit4,.target-item-titel,.target-item-text,.pricing-item:hover .pricint-item-permonth,.team-overlay a,.team-item:hover .team-info-titel,.b2,.footer-links li a{
+    color: white;
+}
+.header .nav li a::after,.header .nav li a.a1::after,.btn1,.line,.team-overlay a,.footer-links li a{
+    background-color: #6195ff;
+}
+.header .logo,.header .nav,.safari,.ga-contact,.offer-content,.target-item,.pricing-item,.team-item{
+    float: left; 
+}
+.team-item .team-img img,.ttb-effect:after,.n2,.ga-contact img,.n,.ltr-eff:hover::after,.over,.header .nav li a:hover:after,.header .nav li a.a1::after,.header{
+    width: 100%;
+}.dscr1,.gallery div,.tit4,.tit3,.title2,.title1{
+    text-transform: capitalize;
+}
+.team-item .team-img,.ttb-effect,.target,.offer-content,.ga-contact,.ltr-eff,.home{
+    position: relative;
+}
+.over,.ltr-eff:after,.n2,.r2,.team-overlay,.ttb-effect:after{
+    position: absolute;
+}
+.team-overlay,.ttb-effect:after,.n2,.ltr-eff:after,.over{
+    top: 0;
+    left: 0;
+}
+                             /* /footer */
+                             /* ******Scorpion******* */
